@@ -24,12 +24,33 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="dataInit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dataList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dataListInit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="init.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="FlightTicket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dataInit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dataListInit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

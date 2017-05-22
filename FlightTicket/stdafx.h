@@ -6,10 +6,11 @@
 #pragma once
 
 #include "targetver.h"
-
+#include <string.h>
 #include <stdio.h>
 #include <tchar.h>
-
-
+#include <Windows.h>
+#include <stdlib.h>
 
 // TODO:  在此处引用程序需要的其他头文件
+

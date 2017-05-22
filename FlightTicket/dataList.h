@@ -2,7 +2,7 @@
 * dataList.h
 * (c)copyright 李沐阳 刘颖民 2016-2017 gench.edu.cn all right reserved.
 ****************************
-* 声明相关链式存储结构
+* 声明相关存储结构
 */
 
 #pragma once

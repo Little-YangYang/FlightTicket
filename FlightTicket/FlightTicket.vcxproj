@@ -142,22 +142,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="dataInit.h" />
     <ClInclude Include="dataList.h" />
     <ClInclude Include="dataListInit.h" />
     <ClInclude Include="init.h" />
+    <ClInclude Include="nav.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="user.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dataInit.cpp" />
     <ClCompile Include="dataListInit.cpp" />
     <ClCompile Include="FlightTicket.cpp" />
     <ClCompile Include="init.cpp" />
+    <ClCompile Include="nav.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="user.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

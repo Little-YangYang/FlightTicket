@@ -149,6 +149,7 @@
     <ClInclude Include="nav.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="ticket.h" />
     <ClInclude Include="user.h" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +159,7 @@
     <ClCompile Include="init.cpp" />
     <ClCompile Include="nav.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="ticket.cpp" />
     <ClCompile Include="user.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -10,7 +10,8 @@
 //读取航线数据
 void createLineList(flightLineInfo info) {
     FILE *fp;
-    int lineCode, startCode, endCode, kilometer, min;
+    int lineCode, kilometer, min;
+    char start[10], end[10];
     flightLineInfo p;
     if ((fp = fopen("dataFlightLine.txt", "r")) == NULL) {
         printf("\nError:C404 无法找到航线数据文件!\n");
@@ -19,10 +20,11 @@ void createLineList(flightLineInfo info) {
         return;
     }
     while (!feof(fp)) {
-        fscanf(fp, "%d %d %d %d %d\n", &lineCode, &startCode, &endCode, &kilometer, &min);
+        fscanf(fp, "%d %s %s %d %d\n", &lineCode, &start, &end, &kilometer, &min);
         p = (flightLineInfo)malloc(sizeof(flightLineInfoNode));
         p->data.lineCode = lineCode;
-        p->data.startCode = startCode;
+        strcpy(p->data.start, start);
+        strcpy(p->data.end, end);
         p->data.kilometer = kilometer;
         p->data.min = min;
         p->next = info->next;

@@ -13,15 +13,15 @@
 *航线信息相关存储链表
 ********************************
 * @pragma lineCode 航线编码
-* @pragma startCode 起点机场编码
-* @pragma endCode 终点机场编码
+* @pragma start 起点机场
+* @pragma end 终点机场编码
 * @pragma kilometer 航班公里数
 * @pragma min 飞行时间(min)
 */
 typedef struct {
     int lineCode;
-    int startCode;
-    int endCode;
+    char start[10];
+    char end[10];
     int kilometer;
     int min;
 }flightLineData;

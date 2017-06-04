@@ -9,6 +9,7 @@
 extern flightLineInfo flightLine;
 extern flightInfo flight;
 extern ticketInfo ticket;
+
 int main() {
     init();
     while (1) {

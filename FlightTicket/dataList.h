@@ -14,7 +14,7 @@
 ********************************
 * @pragma lineCode 航线编码
 * @pragma start 起点机场
-* @pragma end 终点机场编码
+* @pragma end 终点机场
 * @pragma kilometer 航班公里数
 * @pragma min 飞行时间(min)
 */
@@ -76,3 +76,4 @@ typedef struct ticketInfoNode {
     ticketData data;
     struct ticketInfoNode *next;
 }ticketInfoNode, *ticketInfo;
+

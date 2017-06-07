@@ -70,6 +70,18 @@ void infoNav() {
             userSearch();
             return;
         case 2:
+            int id;
+            printf("\t\t\t\t  ©¿«Î ‰»Î∫Ω∞‡±‡∫≈£∫              ©»");
+            printf("\r\t\t\t\t  ©¿«Î ‰»Î∫Ω∞‡±‡∫≈£∫");
+            scanf("%d", &id);
+            if (id) {
+                flightSearch(id);
+            }
+            else {
+                printf("\t\t\t\t  ©¿«Î ‰»Î∫Ω∞‡±‡∫≈£∫              ©»");
+                printf("\r\t\t\t\t  ©¿«Î ‰»Î∫Ω∞‡±‡∫≈£∫");
+            }
+            return;
         case 3:
             return;
         case 4:
@@ -83,5 +95,55 @@ void infoNav() {
 }
 
 void ticketNav() {
-
+    system("cls");
+    int nav;
+    printf("\n\n\n\n");
+    printf("\t\t\t\t**************************************\n");
+    printf("\t\t\t\t©∞©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©¥\n");
+    printf("\t\t\t\t©¿    ª∂”≠ π”√Ω®«≈∫Ωø’∂©∆±œµÕ≥£°    ©»\n");
+    printf("\t\t\t\t©¿©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©»\n");
+    printf("\t\t\t\t©¿      «Î—°‘Òƒ˙–Ë“™µƒ∑˛ŒÒƒ⁄»›      ©»\n");
+    printf("\t\t\t\t©∏©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©º\n");
+    printf("\t\t\t\t**************************************\n");
+    printf("\n\n\n");
+    printf("\t\t\t\t  ©∞©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©¥\n");
+    printf("\t\t\t\t  ©¿1. π”√∫Ω∞‡±‡∫≈≤È—Ø            ©»\n");
+    printf("\t\t\t\t  ©¿©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©»\n");
+    printf("\t\t\t\t  ©¿2. π”√∫Ωœﬂ–≈œ¢≤È—Ø            ©»\n");
+    printf("\t\t\t\t  ©¿©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©»\n");
+    printf("\t\t\t\t  ©¿3.∑µªÿ÷˜≤Àµ•                  ©»\n");
+    printf("\t\t\t\t  ©¿©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©»\n");
+    printf("\t\t\t\t  ©¿4.ÕÀ≥ˆœµÕ≥                    ©»\n");
+    printf("\t\t\t\t  ©∏©§©§©§©§©§©§©§©§©§©§©§©§©§©§©§©º\n\n\n");
+    printf("\t\t\t\t  ©¿«Î—°‘Ò£∫                      ©»");
+    printf("\r\t\t\t\t  ©¿«Î—°‘Ò£∫");
+    while (true) {
+        scanf("%d", &nav);
+        switch (nav) {
+        case 1:
+            int id;
+            printf("\t\t\t\t  ©¿«Î ‰»Î∫Ω∞‡±‡∫≈£∫              ©»");
+            printf("\r\t\t\t\t  ©¿«Î ‰»Î∫Ω∞‡±‡∫≈£∫");
+            scanf("%d", &id);
+            if (id) {
+                flightSearch(id);
+            }
+            else {
+                printf("\t\t\t\t  ©¿«Î ‰»Î∫Ω∞‡±‡∫≈£∫                  ©»");
+                printf("\r\t\t\t\t  ©¿«Î ‰»Î∫Ω∞‡±‡∫≈£∫");
+            }
+            return;
+        case 2:
+            flightLineSearch(1022, 11, 20, 13, 50);
+            return;
+        case 3:
+            return;
+        case 4:
+            exit(1);
+        default:
+            printf("\t\t\t\t  ©¿«Î—°‘Ò£∫                      ©»");
+            printf("\r ‰»Î¥ÌŒÛ£¨«Î÷ÿ–¬ ‰»Î£°\t\t  ©¿«Î—°‘Ò£∫");
+            break;
+        }
+    }
 }

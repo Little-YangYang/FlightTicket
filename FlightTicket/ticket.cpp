@@ -1,3 +1,9 @@
+/*
+* ticket.cpp
+* (c)copyright 李沐阳 刘颖民 2016-2017 gench.edu.cn all right reserved.
+****************************
+* 订票系统相关程序
+*/
 #include "ticket.h"
 
 extern flightLineInfo flightLine;

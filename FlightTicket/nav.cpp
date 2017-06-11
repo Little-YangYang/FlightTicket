@@ -1,3 +1,9 @@
+/*
+* nav.cpp
+* (c)copyright 李沐阳 刘颖民 2016-2017 gench.edu.cn all right reserved.
+****************************
+* 导航菜单程序
+*/
 #include "nav.h"
 
 void showNav() {

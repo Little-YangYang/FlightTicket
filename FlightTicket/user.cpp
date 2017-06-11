@@ -1,3 +1,9 @@
+/*
+* user.cpp
+* (c)copyright 李沐阳 刘颖民 2016-2017 gench.edu.cn all right reserved.
+****************************
+* 用户查询系统相关程序
+*/
 #include "user.h"
 
 extern ticketInfo ticket;

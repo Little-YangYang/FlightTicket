@@ -5,6 +5,7 @@
 * 用户查询系统相关程序
 */
 #include "user.h"
+#include "ticket.h"
 
 extern ticketInfo ticket;
 void userSearch() {
@@ -38,5 +39,18 @@ void userSearch() {
         system("pause");
         userSearch();
     }
+    int nav;
+    printf("\t\t\t\t├是否需要退票？                             0/1┤");
+    printf("\r\t\t\t\t├是否需要退票？");
+    scanf("%d",&nav);
+    if (nav == 1) {
+        int id;
+        printf("\t\t\t\t├请输入退票航班号:                           0/1┤");
+        printf("\r\t\t\t\t├请输入退票航班号:");
+        scanf("%d", &id);
+        refund(uuid, id);
+        return;
+    }
+    return;
     system("pause");
 }

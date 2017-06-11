@@ -117,9 +117,11 @@ void ticketNav() {
     printf("\t\t\t\t  ├───────────────┤\n");
     printf("\t\t\t\t  ├2.使用航线信息查询            ┤\n");
     printf("\t\t\t\t  ├───────────────┤\n");
-    printf("\t\t\t\t  ├3.返回主菜单                  ┤\n");
+    printf("\t\t\t\t  ├3.退票系统                    ┤\n");
     printf("\t\t\t\t  ├───────────────┤\n");
-    printf("\t\t\t\t  ├4.退出系统                    ┤\n");
+    printf("\t\t\t\t  ├4.返回主菜单                  ┤\n");
+    printf("\t\t\t\t  ├───────────────┤\n");
+    printf("\t\t\t\t  ├5.退出系统                    ┤\n");
     printf("\t\t\t\t  └───────────────┘\n\n\n");
     printf("\t\t\t\t  ├请选择：                      ┤");
     printf("\r\t\t\t\t  ├请选择：");
@@ -154,8 +156,11 @@ void ticketNav() {
             flightLineSearch(line, timehMin, timemMin, timehMax, timemMax);
             return;
         case 3:
+            userSearch();
             return;
         case 4:
+            return;
+        case 5:
             exit(1);
         default:
             printf("\t\t\t\t  ├请选择：                      ┤");

@@ -189,9 +189,39 @@ int book(int flightCode, int uuid, char name[10]) {
         }
 
         flight_s = flight_s->next;
-        ticket_s = ticket_s->next;
     }
     return 1;
+}
+
+void refund(int uuid, int id) {
+    flightInfo flight_s;
+    ticketInfo ticket_s;
+    ticketInfo temp;
+
+    ticket_s = ticket;
+    flight_s = flight->next;
+
+    while (ticket_s->next) {
+        if (ticket_s->next->data.uuid == uuid && ticket_s->next->data.flightCode == id) {
+            temp = ticket->next;
+            ticket_s->next = ticket_s->next->next;
+            free(temp);
+            while (flight_s) {
+                if (flight_s->data.flightCode == id) {
+                    flight_s->data.amount += 1;
+                }
+                flight_s = flight_s->next;
+            }
+            saveAll();
+            printf("退票成功！");
+            Sleep(500);
+            return;
+        }
+        ticket_s = ticket_s->next;
+    }
+    printf("无此订票信息！");
+    Sleep(500);
+    return;
 }
 
 void saveAll() {

@@ -129,12 +129,23 @@ void ticketNav() {
                 flightSearch(id);
             }
             else {
-                printf("\t\t\t\t  ├请输入航班编号：                  ┤");
+                printf("\t\t\t\t  ├请输入航班编号：                ┤");
                 printf("\r\t\t\t\t  ├请输入航班编号：");
             }
             return;
         case 2:
-            flightLineSearch(1022, 11, 20, 13, 50);
+            int line, timehMin, timehMax, timemMin, timemMax;
+            printf("\t\t\t\t  ├请输入航线编号：                ┤");
+            printf("\r\t\t\t\t  ├请输入航线编号：");
+            scanf("%d", &line);
+            printf("\t\t\t\t  ├请输入最早时间：           h:m  ┤");
+            printf("\r\t\t\t\t  ├请输入最早时间：");
+            scanf("%d:%d", &timehMin, &timemMin);
+            printf("\t\t\t\t  ├请输入最晚时间：           h:m  ┤");
+            printf("\r\t\t\t\t  ├请输入最晚时间：");
+            scanf("%d:%d", &timehMax, &timemMax);
+
+            flightLineSearch(line, timehMin, timemMin, timehMax, timemMax);
             return;
         case 3:
             return;
